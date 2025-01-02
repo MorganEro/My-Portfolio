@@ -1,0 +1,38 @@
+@use '../abstracts/variables';
+
+#Introduction {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(248, 239, 222, 0.9),
+      rgba(255, 204, 128, 0.9)
+    ),
+    url('/woodCoreGrain.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+#Experience {
+  height: max-content;
+  background-color: variables.$me-orange-50;
+}
+
+#Projects {
+  height: max-content;
+  background-color: variables.$me-orange-50;
+}
+
+#Contact {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+
+      rgba(65, 43, 9, 0.8),
+      rgb(30, 20, 4)
+    ),
+    url('/woodDots.jpg');
+  background-size: cover;
+  background-position: top;
+}

@@ -1,0 +1,52 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables';
+
+#offcanvasNavbar {
+  max-width: 50vw;
+  background-color: variables.$me-orange-50;
+}
+
+li[id='offcanvas-list']:focus {
+  outline: none;
+  @include respond(medium) {
+    outline: 2px solid variables.$me-orange-500;
+  }
+}
+
+#offcanvas-list .nav-link {
+  color: variables.$me-orange-500;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  @include respond(medium) {
+    &.light {
+      color: variables.$me-orange-50;
+    }
+
+    &.dark {
+      color: variables.$me-orange-900;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      color: variables.$me-orange-800;
+    }
+  }
+}
+
+.navbar-brand :hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand :active {
+  transform: scale(1);
+}
+
+@include respond(medium) {
+  .focus-arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+@use '../base/animations' as *;
+
+.section-introduction__heading {
+  animation: moveInTop 0.5s ease-out;
+}
+
+.section-introduction__cta {
+  animation: moveInBottom 0.5s ease-out;
+}

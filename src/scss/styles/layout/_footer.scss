@@ -1,0 +1,11 @@
+@use '../abstracts/variables';
+
+#socialMediaIcons {
+  color: variables.$me-orange-500;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

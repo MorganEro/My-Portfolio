@@ -1,0 +1,70 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables';
+
+.navbar-toggler__icon {
+  border: 2px solid variables.$me-orange-500;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  transition: all 0.3s;
+  transform: translate(-75%, -50%);
+
+  @include respond(medium) {
+    display: none;
+  }
+
+  & .line-1,
+  & .line-2,
+  & .line-3,
+  & .line-4 {
+    width: 2rem;
+    height: 5px;
+    display: inline-block;
+    background-color: variables.$me-orange-500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0.5rem);
+    transition: all 0.3s;
+  }
+
+  & .line-1 {
+    top: 1rem;
+  }
+
+  & .line-2 {
+    top: 1.8rem;
+  }
+
+  & .line-3 {
+    top: 2.6rem;
+  }
+  & .line-4 {
+    top: 1.8rem;
+  }
+
+  &:hover {
+    width: 3.5rem;
+    height: 3.2rem;
+
+    & .line-1 {
+      top: 1rem;
+      transform: translate(-75%, 0.3rem) rotate(60deg);
+    }
+
+    & .line-2 {
+      top: 1.8rem;
+      transform: translate(-25%, -0.5rem) rotate(-60deg);
+    }
+
+    & .line-3 {
+      top: 1.8rem;
+      transform: translate(-100%, -0.5rem) rotate(90deg);
+    }
+
+    & .line-4 {
+      display: inline-block;
+      top: 1.8rem;
+      transform: translate(0, -0.5rem) rotate(90deg);
+    }
+  }
+}
