@@ -5,7 +5,6 @@ import { FaAsterisk } from 'react-icons/fa';
 import { MESSAGE_LENGTH } from '../utils/constants';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
-import { DevTool } from '@hookform/devtools';
 
 function Contact() {
   const [remainingChars, setRemainingChars] = useState(MESSAGE_LENGTH);
@@ -241,7 +240,6 @@ function Contact() {
           </div>
         </form>
       </div>
-      <DevTool control={control} />
     </section>
   );
 }

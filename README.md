@@ -6,27 +6,11 @@ Welcome to my frontend developer portfolio! This website showcases my journey as
 
 - [My Portfolio](#my-portfolio)
   - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
   - [Author](#author)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Navigate between Home, Movies, TV TvSeries, and Bookmarked Shows pages
-- Add/Remove bookmarks from all movies and TV tvseries
-- Search for relevant shows on all pages
-- **Bonus**: Build this project as a full-stack application
-- **Bonus**: If you're building a full-stack app, we provide authentication screen (sign-up/login) designs if you'd like to create an auth flow
 
 ### Screenshot
 
@@ -34,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/MorganEro/my-portfolio)
-- Live Site URL: (https://my-porfolio.netlify.app)
+- Solution URL: (https://github.com/MorganEro/My-Portfolio)
+- Live Site URL: (https://my-portfolio-rho-azure-36.vercel.app/)
 
 ## My process
 
