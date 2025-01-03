@@ -28,3 +28,11 @@ input:-webkit-autofill:focus {
   -webkit-text-fill-color: variables.$me-orange-1000;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+.backToTopArrow {
+  top: 95%;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}

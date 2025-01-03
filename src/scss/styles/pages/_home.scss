@@ -2,6 +2,7 @@
 
 #Introduction {
   height: 100vh;
+  min-height: fit-content;
   position: relative;
   background-image: linear-gradient(
       to right bottom,
@@ -25,6 +26,7 @@
 
 #Contact {
   height: 100vh;
+  min-height: fit-content;
   position: relative;
   background-image: linear-gradient(
       to bottom,

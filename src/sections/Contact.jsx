@@ -5,6 +5,8 @@ import { FaAsterisk } from 'react-icons/fa';
 import { MESSAGE_LENGTH } from '../utils/constants';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+import { Link } from 'react-scroll';
 
 function Contact() {
   const [remainingChars, setRemainingChars] = useState(MESSAGE_LENGTH);
@@ -46,14 +48,12 @@ function Contact() {
           toast.error('Failed to send message. Please try again later.');
         }
       );
-
-    console.log(data);
   };
 
   return (
     <section
       id="Contact"
-      className="section-contact d-flex flex-column align-items-center justify-content-center px-1 px-md-3 px-lg-5">
+      className="section-contact d-flex flex-column align-items-center justify-content-center px-1 px-md-3 px-lg-5 py-5 position-relative">
       <div className="container">
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -230,7 +230,7 @@ function Contact() {
               className="me-btn-reset mt-3"
               type="button"
               onClick={() => reset()}>
-              Cancel
+              Clear
             </button>
             <button
               className="me-btn-submit mt-3"
@@ -239,6 +239,16 @@ function Contact() {
             </button>
           </div>
         </form>
+      </div>
+      <div className="backToTopArrow text-center position-absolute start-50 translate-middle">
+        <Link
+          smooth={true}
+          duration={500}
+          to="Introduction"
+          href="#Introduction"
+          className="backToTopArrow text-center ">
+          <MdKeyboardDoubleArrowUp size={30} />
+        </Link>
       </div>
     </section>
   );

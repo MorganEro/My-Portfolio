@@ -5,7 +5,7 @@ function ContactButton({ className }) {
     <Link
       to="Contact"
       smooth={true}
-      duration={200}
+      duration={500}
       className={`${className} btn border-0`}
       role="button">
       {' '}

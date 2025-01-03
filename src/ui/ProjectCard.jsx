@@ -50,7 +50,7 @@ function ProjectCard({
         {techList.map((tech, index) => (
           <li
             key={index}
-            className="project-card__tech-item text-uppercase text-primary">
+            className="project-card__tech-item text-uppercase">
             <small>{tech}</small>
           </li>
         ))}

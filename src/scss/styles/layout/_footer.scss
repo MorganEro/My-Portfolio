@@ -1,5 +1,9 @@
 @use '../abstracts/variables';
 
+.footer {
+  width: max-content;
+}
+
 #socialMediaIcons {
   color: variables.$me-orange-500;
   transition: all 0.3s;

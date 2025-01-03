@@ -15,57 +15,57 @@ import { IoLogoJavascript } from 'react-icons/io5';
 const experienceData = [
   {
     title: 'html',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: FaHtml5,
   },
   {
     title: 'css',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: FaCss3Alt,
   },
   {
     title: 'javascript',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: IoLogoJavascript,
   },
   {
     title: 'node.js',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: FaNodeJs,
   },
   {
     title: 'react',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: FaReact,
   },
   {
     title: 'nextjs',
-    years: calculateYears(2023),
+    years: calculateYears('10/2024'),
     icon: RiNextjsFill,
   },
   {
     title: 'git',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: FaGitAlt,
   },
   {
     title: 'tailwindcss',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: RiTailwindCssFill,
   },
   {
     title: 'bootstrap',
-    years: calculateYears(2022),
+    years: calculateYears('08/2022'),
     icon: FaBootstrap,
   },
   {
     title: 'sass',
-    years: calculateYears(2023),
+    years: calculateYears('10/2023'),
     icon: FaSass,
   },
   {
     title: 'accessibility',
-    years: calculateYears(2023),
+    years: calculateYears('10/2023'),
     icon: FaUniversalAccess,
   },
 ];

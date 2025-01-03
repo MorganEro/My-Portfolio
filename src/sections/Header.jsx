@@ -86,7 +86,7 @@ function Header() {
                       href={`#${link.to}`}
                       spy={true}
                       smooth={true}
-                      duration={200}
+                      duration={500}
                       activeStyle={{ fontWeight: '600' }}>
                       <div className="d-flex align-items-center justify-content-center">
                         {link.name}
