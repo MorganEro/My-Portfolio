@@ -2,7 +2,7 @@ const projectsData = [
   {
     id: 1,
     title: 'Entertainment Web App',
-    techList: ['Vite/React', 'Styled components', 'JavaScript'],
+    techList: ['Vite/React', 'Styled components'],
     viewProjectLink: 'https://fm-entertainment-web-app.netlify.app/',
     viewCodeLink: 'https://github.com/MorganEro/entertainment-web-app',
     imageURL:
@@ -10,8 +10,17 @@ const projectsData = [
   },
   {
     id: 2,
+    title: 'The Wild Oasis',
+    techList: ['Next.js', 'Tailwind'],
+    viewProjectLink: 'https://the-wild-oasis-website-eight-chi.vercel.app/',
+    viewCodeLink: 'https://github.com/MorganEro/TheWildOasis',
+    imageURL:
+      '/portfolio-images/Screen%20Shot%202025-01-03%20at%2022.28.28.png?updatedAt=1735965163722',
+  },
+  {
+    id: 3,
     title: 'Ecommerce Product Page',
-    techList: ['React', 'JavaScript', 'Bootstrap', 'CSS'],
+    techList: ['React', 'Bootstrap', 'CSS'],
     viewProjectLink: 'https://morganero.github.io/ecommerce-product-page/',
     viewCodeLink: 'https://github.com/MorganEro/ecommerce-product-page',
     imageURL:

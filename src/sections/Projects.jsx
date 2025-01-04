@@ -6,7 +6,7 @@ function Projects() {
   return (
     <section
       id="Projects"
-      className="section-projects px-1 px-md-3 px-lg-5">
+      className="section-projects px-1 px-md-3 px-lg-5 pb-5">
       <hr className="section-projects__divider pb-4" />
       <div className="container py-2 py-md-5">
         <h2 className="section-projects__heading display-2 pb-4 d-flex justify-content-center justify-content-md-start pb-3 pb-md-5">
