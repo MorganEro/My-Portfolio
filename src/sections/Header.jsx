@@ -52,7 +52,8 @@ function Header() {
           <div
             className="offcanvas offcanvas-start me-bg-orange-50"
             id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+            aria-labelledby="offcanvasNavbarLabel"
+            data-bs-backdrop="static">
             <div className="offcanvas-header">
               <button
                 id="offcanvas-close"

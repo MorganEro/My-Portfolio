@@ -42,7 +42,9 @@
     top: 1.8rem;
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     width: 3.5rem;
     height: 3.2rem;
 
