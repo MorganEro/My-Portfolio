@@ -1,12 +1,26 @@
-$me-orange-50: #f8efde;
-$me-orange-75: #fce8c3;
-$me-orange-100: #ffe5b5;
-$me-orange-200: #ffcc80;
-$me-orange-300: #ffb24d;
-$me-orange-400: #fd7e14;
-$me-orange-500: #e66a00;
-$me-orange-600: #cc5c00;
-$me-orange-700: #b34d00;
-$me-orange-800: #993e00;
-$me-orange-900: #802f00;
-$me-orange-1000: #200e03;
+:root {
+  --color-light-100: #fff2e8; //
+  --color-light-200: #ffe5d0; //
+  --color-light-300: #ffd8b9; //
+  --color-light-400: #ffcc80;
+  --color-light-500: #ffb24d;
+  --color-light-600: #ff9933;
+  --color-light-700: #ff8000;
+  --color-light-800: #e67300;
+  --color-light-900: #fd8b2b;
+  --color-base: #fd7e14; //
+  --color-dark-100: #e47112;
+  --color-dark-200: #ca6510;
+  --color-dark-300: #b1580e; //
+  --color-dark-400: #984c0c;
+  --color-dark-500: #7f3f0a;
+  --color-dark-600: #653208;
+  --color-dark-700: #4c2606;
+  --color-dark-800: #331904; //
+  --color-dark-900: #190d02; //
+
+  --color-light-100-rgba: 255, 242, 232, 0.9;
+  --color-light-400-rgba: 255, 204, 128, 0.9;
+  --color-dark-800-rgba: 51, 25, 4, 0.8;
+  --color-dark-900-rgb: 25, 13, 2, 1;
+}

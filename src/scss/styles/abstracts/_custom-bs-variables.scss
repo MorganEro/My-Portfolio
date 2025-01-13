@@ -4,17 +4,12 @@ $font-family-base: 'Raleway', serif;
 $font-weight-normal: 500;
 $display-font-weight: 800;
 
-$primary: variables.$me-orange-400;
-$secondary: variables.$me-orange-75;
-$body-color: variables.$me-orange-900;
-$body-bg: variables.$me-orange-50;
-
-$focus-ring-color: variables.$me-orange-300;
+$focus-ring-color: #{var(--color-light-500)};
 $focus-ring-width: 0.15rem;
 
 $border-radius-sm: 0.1rem;
-$border-radius: 0.1rem;
+$border-radius: 0.2rem;
 
 $btn-padding-x: 0rem;
 
-$input-color: variables.$me-orange-1000;
+$input-color: #{var(--color-dark-900)};

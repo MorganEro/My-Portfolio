@@ -1,0 +1,15 @@
+@use '../../../scss/styles/abstracts/variables';
+
+.footer {
+  width: max-content;
+}
+
+#socialMediaIcons {
+  color: #{var(--color-dark-100)};
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

@@ -10,7 +10,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'Ecommerce Product Page',
+    title: 'E-commerce Product Page',
     techList: ['React', 'Bootstrap'],
     viewProjectLink: 'https://morganero.github.io/ecommerce-product-page/',
     viewCodeLink: 'https://github.com/MorganEro/ecommerce-product-page',

@@ -1,0 +1,34 @@
+@use '../../../scss/styles/abstracts/variables';
+@use '../../../scss/styles/abstracts/custom-bs-variables' as *;
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-container {
+  background-color: #{var(--color-light-300)};
+  border-radius: $border-radius;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 90%;
+  max-width: 66rem;
+}
+
+.show-modal {
+  opacity: 1;
+  z-index: 1000;
+  visibility: visible;
+  transition-property: opacity;
+  transition-duration: 1s;
+}

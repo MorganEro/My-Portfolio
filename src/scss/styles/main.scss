@@ -1,41 +1,37 @@
-// main.scss
 @use './abstracts/variables';
 @use './abstracts/mixins';
-@use './abstracts/custom-bs-variables' as *;
+@use './abstracts/custom-bs-variables' as vars;
 
 @use './base/animations';
 @use './base/base';
 @use './base/typography';
 @use './base/utilities';
 
-@use './components/buttons';
-@use './components/icons';
+@use '../../components/ui/buttons/buttons';
+@use '../../components/ui/icons/icons';
+@use '../../components/ui/inputs/inputs';
+@use '../../components/ui/modals/modals';
 
-@use './layout/header';
-@use './layout/footer';
-@use './layout/contact';
-@use './layout/introduction';
-@use './layout/projects';
+@use '../../components/sections/header/header';
+@use '../../components/sections/footer/footer';
+@use '../../components/sections/contact/contact';
+@use '../../components/sections/introduction/introduction';
+@use '../../components/sections/projects/projects';
 
 @use './pages/home';
 
 @use '../../../node_modules/bootstrap/scss/bootstrap' with (
-  $font-family-base: $font-family-base,
-  $font-weight-normal: $font-weight-normal,
-  $display-font-weight: $display-font-weight,
+  $font-family-base: vars.$font-family-base,
+  $font-weight-normal: vars.$font-weight-normal,
+  $display-font-weight: vars.$display-font-weight,
 
-  $primary: $primary,
-  $secondary: $secondary,
-  $body-color: $body-color,
-  $body-bg: $body-bg,
+  $focus-ring-color: vars.$focus-ring-color,
+  $focus-ring-width: vars.$focus-ring-width,
 
-  $focus-ring-color: $focus-ring-color,
-  $focus-ring-width: $focus-ring-width,
+  $border-radius-sm: vars.$border-radius-sm,
+  $border-radius: vars.$border-radius,
 
-  $border-radius-sm: $border-radius-sm,
-  $border-radius: $border-radius,
+  $btn-padding-x: vars.$btn-padding-x,
 
-  $btn-padding-x: $btn-padding-x,
-
-  $input-color: $input-color
+  $input-color: vars.$input-color
 );

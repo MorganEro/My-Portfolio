@@ -1,0 +1,43 @@
+@use '../../../scss/styles/abstracts/variables';
+@use '../../../scss/styles/base/animations' as *;
+
+.remainingChars {
+  font-size: 0.8rem;
+  right: 0;
+  bottom: -20px;
+}
+
+.error-message {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+input,
+textarea {
+  background-color: #{var(--color-light-100)} !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #{var(--color-light-100)} inset;
+  -webkit-text-fill-color: #{var(--color-dark-900)};
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #{var(--color-light-100)} inset;
+  -webkit-text-fill-color: #{var(--color-dark-900)};
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.backToTopArrow {
+  color: #{var(--color-base)};
+  top: 95%;
+
+  &:hover {
+    color: #{var(--color-dark-300)};
+  }
+
+  & svg {
+    animation: bounce 1s ease-in-out 5;
+  }
+}

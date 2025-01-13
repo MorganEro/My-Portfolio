@@ -1,51 +1,37 @@
-// _typography.scss
 @use '../abstracts/variables';
 
-.text-orange-50 {
-  color: variables.$me-orange-50;
+.me-text-primary {
+  color: #{var(--color-base)};
 }
 
-.text-orange-75 {
-  color: variables.$me-orange-75;
+.me-text-secondary {
+  color: #{var(--color-light-200)};
 }
 
-.text-orange-100 {
-  color: variables.$me-orange-100;
+.text-light-100 {
+  color: #{var(--color-light-100)};
 }
 
-.text-orange-200 {
-  color: variables.$me-orange-200;
+.text-dark-300 {
+  color: #{var(--color-dark-300)};
 }
-
-.text-orange-300 {
-  color: variables.$me-orange-300;
+.text-dark-400 {
+  color: #{var(--color-dark-400)};
 }
-.text-orange-400 {
-  color: variables.$me-orange-400;
+.text-dark-500 {
+  color: #{var(--color-dark-500)};
 }
-
-.text-orange-500 {
-  color: variables.$me-orange-500;
+.text-dark-600 {
+  color: #{var(--color-dark-600)};
 }
-
-.text-orange-600 {
-  color: variables.$me-orange-600;
+.text-dark-700 {
+  color: #{var(--color-dark-700)};
 }
-
-.text-orange-700 {
-  color: variables.$me-orange-700;
+.text-dark-800 {
+  color: #{var(--color-dark-800)};
 }
-
-.text-orange-800 {
-  color: variables.$me-orange-800;
-}
-
-.text-orange-900 {
-  color: variables.$me-orange-900;
-}
-
-.text-orange-1000 {
-  color: variables.$me-orange-1000;
+.text-dark-900 {
+  color: #{var(--color-dark-900)};
 }
 
 .text-xl {

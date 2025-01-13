@@ -1,0 +1,170 @@
+@use '../../../scss/styles/abstracts/mixins' as *;
+@use '../../../scss/styles/abstracts/variables';
+@use '../../../scss/styles/abstracts/custom-bs-variables' as custom;
+@use '../../../scss/styles/base/typography' as *;
+
+.me-btn-primary {
+  color: #{var(--color-dark-500)};
+  border-bottom: 2px solid #{var(--color-dark-100)};
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  transition: all 0.3s;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    color: #{var(--color-dark-100)};
+  }
+
+  &:focus,
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &:disabled {
+    color: gray;
+    border-color: gray;
+  }
+}
+
+.me-btn-submit {
+  border: 2px solid #{var(--color-light-300)};
+  border-radius: custom.$border-radius;
+  background-color: transparent;
+  color: #{var(--color-light-300)};
+  outline: none;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #{var(--color-base)};
+  }
+
+  &:active {
+    transform: scale(0.9);
+    color: #{var(--color-base)};
+  }
+
+  &:disabled {
+    color: gray;
+    border-color: gray;
+  }
+}
+
+.me-btn-reset {
+  border: none;
+  background-color: transparent;
+  color: #{var(--color-light-300)};
+  outline: none;
+  transition: border-color 0.3s;
+  padding: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #{var(--color-base)};
+  }
+
+  &:active {
+    transform: scale(0.9);
+    color: #{var(--color-base)};
+  }
+
+  &:disabled {
+    color: gray;
+    border-color: gray;
+  }
+}
+
+.me-project-btn {
+  color: #{var(--color-dark-500)};
+  border-bottom: 2px solid #{var(--color-dark-100)};
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  padding: 0.2rem 0;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    color: #{var(--color-dark-100)};
+  }
+
+  &:focus,
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+a.project-btn.btn.border-0:focus {
+  color: #{var(--color-dark-100)};
+  transform: scale(1.1);
+}
+
+//NAVBAR BUTTONS
+
+#navbar-toggler {
+  color: #{var(--color-dark-100)};
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+
+    .navbar-toggler__icon {
+      outline: 2px solid #{var(--color-dark-100)};
+      outline-offset: 2px;
+    }
+  }
+
+  @include respond(medium) {
+    display: none;
+  }
+}
+
+.me-btn-close {
+  background: none;
+  border: none;
+  &:focus {
+    outline: 1px solid #{var(--color-dark-100)};
+    box-shadow: none;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.me-btn-color-change {
+  border-radius: custom.$border-radius;
+  color: #{var(--color-dark-900)};
+  border: 1px solid #{var(--color-dark-300)};
+
+  outline: none;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+
+  &:disabled {
+    color: gray;
+    border-color: gray;
+  }
+}

@@ -6,22 +6,22 @@
   position: relative;
   background-image: linear-gradient(
       to right bottom,
-      rgba(248, 239, 222, 0.9),
-      rgba(255, 204, 128, 0.9)
+      (#{var(--color-light-100-rgba)}),
+      (#{var(--color-light-400-rgba)})
     ),
-    url('/woodCoreGrain.jpg');
+    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/woodCoreGrain.jpg');
   background-size: cover;
   background-position: bottom;
 }
 
 #Experience {
   height: max-content;
-  background-color: variables.$me-orange-50;
+  background-color: #{var(--color-light-100)};
 }
 
 #Projects {
   height: max-content;
-  background-color: variables.$me-orange-50;
+  background-color: #{var(--color-light-100)};
 }
 
 #Contact {
@@ -30,11 +30,10 @@
   position: relative;
   background-image: linear-gradient(
       to bottom,
-
-      rgba(65, 43, 9, 0.8),
-      rgb(30, 20, 4)
+      (#{var(--color-dark-800-rgba)}),
+      (#{var(--color-dark-900-rgb)})
     ),
-    url('/woodDots.jpg');
+    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/woodDots.jpg');
   background-size: cover;
   background-position: top;
 }
