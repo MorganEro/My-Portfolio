@@ -1,13 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import './scss/styles/main.scss';
 import App from './App.jsx';
-import { ModalProvider } from './context/ModalContext.jsx';
+import './scss/styles/main.scss';
+import { AppProviders } from './utils/providers.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ModalProvider>
+    <AppProviders>
       <App />
-    </ModalProvider>
+    </AppProviders>
   </StrictMode>
 );

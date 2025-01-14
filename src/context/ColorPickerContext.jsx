@@ -20,6 +20,11 @@ export const ColorPickerProvider = ({ children }) => {
 
   const updateCssVariables = colors => {
     colors.forEach((color, index) => {
+      if (!color.hex || !color.rgb) {
+        console.warn(`Invalid color structure at index ${index}`, color);
+        return;
+      }
+
       const hexColor = `#${color.hex}`;
       const rgbaColor = rgbToRgba(
         color.rgb,
@@ -87,9 +92,46 @@ export const ColorPickerProvider = ({ children }) => {
     });
   };
 
+  const saveColorSettings = (colors, primaryColor) => {
+    const simplifiedColors = colors.map(color => ({
+      hex: color.hex,
+      rgb: color.rgb,
+    }));
+    localStorage.setItem('colors', JSON.stringify(simplifiedColors));
+    localStorage.setItem('primaryColor', JSON.stringify(primaryColor));
+  };
+
+  const loadColorSettings = () => {
+    const savedColors = localStorage.getItem('colors');
+    const savedPrimaryColor = localStorage.getItem('primaryColor');
+
+    if (savedColors && savedPrimaryColor) {
+      try {
+        const primaryColor = JSON.parse(savedPrimaryColor);
+        const colors = JSON.parse(savedColors);
+        const isValid = colors.every(color => color.hex && color.rgb);
+
+        if (isValid) {
+          setPrimaryColor(primaryColor);
+          updateCssVariables(colors);
+          setColors(colors);
+        } else {
+          handleReset();
+          console.error(
+            `Invalid color structure in storage. Resetting colors.`
+          );
+        }
+      } catch (error) {
+        console.error(`Error parsing colors from localStorage`, error);
+      }
+    }
+  };
+
   const applyPalette = e => {
     e.preventDefault();
     updateCssVariables(colors);
+    setColors(colors);
+    saveColorSettings(colors, primaryColor);
   };
 
   const handlePalletLinkClick = () => {
@@ -104,6 +146,8 @@ export const ColorPickerProvider = ({ children }) => {
     setPrimaryColor('#fd7e14');
     setColors(new Values('#fd7e14').all(10));
     updateCssVariables(colors);
+    localStorage.removeItem('colors');
+    window.location.reload();
   };
 
   return (
@@ -117,6 +161,7 @@ export const ColorPickerProvider = ({ children }) => {
         setColors,
         applyPalette,
         handleReset,
+        loadColorSettings,
       }}>
       {children}
     </ColorPickerContext.Provider>

@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 function ContactButton({ className }) {
   return (
     <Link
+      tabIndex={0}
       to="Contact"
       smooth={true}
       duration={500}

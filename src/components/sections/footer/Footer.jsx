@@ -34,6 +34,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer">
               <link.icon
+                aria-label="social media icon"
                 id="socialMediaIcons"
                 size={25}
               />

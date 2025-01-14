@@ -4,6 +4,7 @@ function ExperienceCard({ experience }) {
       <experience.icon
         size={60}
         className="experience__icon me-text-primary "
+        aria-label={experience.title}
       />
       <h3 className="experience__title text-uppercase fw-bold mb-0 text-dark-500">
         {experience.title}

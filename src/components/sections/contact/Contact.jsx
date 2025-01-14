@@ -64,7 +64,10 @@ function Contact() {
               className="form-label">
               Full Name{' '}
               <span className="me-text-primary">
-                <FaAsterisk size={8} />
+                <FaAsterisk
+                  size={8}
+                  aria-label="Required"
+                />
               </span>
             </label>
             <input
@@ -91,7 +94,10 @@ function Contact() {
               Email{' '}
               <span className="me-text-primary">
                 {' '}
-                <FaAsterisk size={8} />
+                <FaAsterisk
+                  size={8}
+                  aria-label="Required"
+                />
               </span>
             </label>
             <input
@@ -242,12 +248,16 @@ function Contact() {
       </div>
       <div className="backToTopArrow text-center position-absolute start-50 translate-middle">
         <Link
+          aria-label="Back to top"
           smooth={true}
           duration={500}
           to="Introduction"
           href="#Introduction"
           className="backToTopArrow text-center ">
-          <MdKeyboardDoubleArrowUp size={30} />
+          <MdKeyboardDoubleArrowUp
+            size={30}
+            aria-label="Up Arrow"
+          />
         </Link>
       </div>
     </section>

@@ -6,8 +6,8 @@
   position: relative;
   background-image: linear-gradient(
       to right bottom,
-      (#{var(--color-light-100-rgba)}),
-      (#{var(--color-light-400-rgba)})
+      #{var(--color-light-100-rgba)},
+      #{var(--color-light-400-rgba)}
     ),
     url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/woodCoreGrain.jpg');
   background-size: cover;
@@ -30,8 +30,8 @@
   position: relative;
   background-image: linear-gradient(
       to bottom,
-      (#{var(--color-dark-800-rgba)}),
-      (#{var(--color-dark-900-rgb)})
+      #{var(--color-dark-800-rgba)},
+      #{var(--color-dark-900-rgb)}
     ),
     url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/woodDots.jpg');
   background-size: cover;
