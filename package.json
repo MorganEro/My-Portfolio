@@ -14,6 +14,7 @@
     "@popperjs/core": "^2.11.8",
     "autoprefixer": "^10.4.20",
     "bootstrap": "^5.3.3",
+    "focus-trap-react": "^11.0.3",
     "imagekitio-react": "^4.2.0",
     "nanoid": "^5.0.9",
     "react": "^18.3.1",

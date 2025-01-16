@@ -7,6 +7,8 @@ import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
 import { Link } from 'react-scroll';
 import { useFormLocation } from '../../../context/LocationContext';
 import { MESSAGE_LENGTH } from '../../../utils/constants';
+import { NoBorderButton } from '../../ui/buttons/NoBorderButton';
+import { BorderedButton } from '../../ui/buttons/BorderedButton';
 
 function Contact() {
   const [remainingChars, setRemainingChars] = useState(MESSAGE_LENGTH);
@@ -231,18 +233,13 @@ function Contact() {
             </small>
           </div>
 
-          <div className="col-12 d-flex justify-content-end gap-3">
-            <button
-              className="me-btn-reset mt-3"
-              type="button"
-              onClick={() => reset()}>
+          <div className="col-12 d-flex justify-content-end gap-3 pt-3">
+            <NoBorderButton
+              onClick={() => reset()}
+              aria-label="Clear form">
               Clear
-            </button>
-            <button
-              className="me-btn-submit mt-3"
-              type="submit">
-              Submit
-            </button>
+            </NoBorderButton>
+            <BorderedButton aria-label="Submit form">Submit</BorderedButton>
           </div>
         </form>
       </div>

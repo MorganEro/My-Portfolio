@@ -9,12 +9,14 @@ function Projects() {
       className="section-projects px-1 px-md-3 px-lg-5 pb-5">
       <hr className="section-projects__divider pb-4 mt-0 " />
       <div className="container py-2 py-md-5 ">
-        <h2 className="section-projects__heading display-2 pb-4 d-flex justify-content-center justify-content-md-start pb-3 pb-md-5 text-dark-500">
-          Projects{' '}
+        <div className="d-flex justify-content-center justify-content-md-start align-items-center pb-3 pb-md-5">
+          <h2 className="section-projects__heading display-2 text-dark-500">
+            Projects{' '}
+          </h2>
           <span className="section-projects__cta d-none d-md-block ms-auto">
             <ContactButton />
           </span>
-        </h2>
+        </div>
         <div className="projects-container row g-5 justify-content-around">
           {projectsData.map(project => (
             <div

@@ -1,7 +1,9 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useSection } from '../../../context/SectionContext';
 import { SiFrontendmentor } from 'react-icons/si';
 
 function Footer() {
+  const { onContact, onIntro } = useSection();
   const socialMediaIcons = [
     {
       name: 'Frontend Mentor',
@@ -36,6 +38,7 @@ function Footer() {
               <link.icon
                 aria-label="social media icon"
                 id="socialMediaIcons"
+                className={`${onContact === 'true' ? 'light' : ''} `}
                 size={25}
               />
             </a>

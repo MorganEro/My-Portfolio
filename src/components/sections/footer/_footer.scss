@@ -12,4 +12,12 @@
   &:hover {
     transform: scale(1.2);
   }
+
+  &.light {
+    color: #{var(--color-light-100)};
+  }
+
+  &.dark {
+    color: #{var(--color-dark-100)};
+  }
 }

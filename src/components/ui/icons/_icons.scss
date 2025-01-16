@@ -8,6 +8,9 @@
   position: absolute;
   transition: all 0.3s;
   transform: translate(-75%, -50%);
+  &.light {
+    background-color: #{var(--color-light-100)};
+  }
 
   @include respond(medium) {
     display: none;

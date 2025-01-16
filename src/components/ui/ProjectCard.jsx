@@ -14,7 +14,7 @@ function ProjectCard({
   const isLargeScreen = useMediaQuery({ query: '(min-width: 1024px)' });
 
   return (
-    <div className="project-card d-flex flex-column gap-2 align-items-center">
+    <article className="project-card d-flex flex-column gap-2 align-items-center">
       <h3 className="project-card__heading mb-1 fw-bold text-dark-500">
         {title}
       </h3>
@@ -41,10 +41,12 @@ function ProjectCard({
           <ProjectButton
             title="View project"
             link={viewProjectLink}
+            ariaLabel={`View project: ${title}`}
           />
           <ProjectButton
             title="View code"
             link={viewCodeLink}
+            ariaLabel={`View code for project: ${title}`}
           />
         </div>
       </div>
@@ -63,13 +65,15 @@ function ProjectCard({
         <ProjectButton
           title="View project"
           link={viewProjectLink}
+          ariaLabel={`View project: ${title}`}
         />
         <ProjectButton
           title="View code"
           link={viewCodeLink}
+          ariaLabel={`View code for project: ${title}`}
         />
       </div>
-    </div>
+    </article>
   );
 }
 

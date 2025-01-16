@@ -2,16 +2,18 @@ import { Link } from 'react-scroll';
 
 function ContactButton({ className }) {
   return (
-    <Link
-      tabIndex={0}
-      to="Contact"
-      smooth={true}
-      duration={500}
-      className={`${className} btn border-0`}
-      role="button">
-      {' '}
-      <div className="me-btn-primary">Contact me</div>
-    </Link>
+    <div className={className}>
+      <Link
+        tabIndex={0}
+        to="Contact"
+        smooth={true}
+        duration={500}
+        aria-label="Contact me"
+        className="me-btn-contact"
+        role="button">
+        Contact me
+      </Link>
+    </div>
   );
 }
 

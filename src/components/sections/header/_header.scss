@@ -6,19 +6,21 @@
   background-color: #{var(--color-light-100)};
 }
 
-li[id='offcanvas-list']:focus,
-.color-picker:focus {
+li[id='offcanvas-list']:focus {
   outline: none;
   @include respond(medium) {
     outline: 2px solid #{var(--color-dark-800)};
   }
 }
 
-#offcanvas-list .nav-link,
-.color-picker {
-  color: #{var(--color-dark-100)};
-  transition: all 0.3s;
+#offcanvas-list .nav-link {
+  color: #{var(--color-dark-300)};
+  transition: scale 0.3s ease-in-out;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @include respond(medium) {
     &.light {
@@ -28,14 +30,14 @@ li[id='offcanvas-list']:focus,
     &.dark {
       color: #{var(--color-dark-300)};
     }
+  }
+}
 
-    &:hover {
-      transform: scale(1.1);
-    }
+.navbar-items {
+  flex-direction: column-reverse;
 
-    &:active {
-      color: #{var(--color-dark-300)};
-    }
+  @include respond(medium) {
+    flex-direction: row;
   }
 }
 
@@ -50,14 +52,5 @@ li[id='offcanvas-list']:focus,
 @include respond(medium) {
   .focus-arrow {
     display: none;
-  }
-}
-
-.color-picker {
-  color: #{var(--color-dark-300)};
-  padding-bottom: 20px;
-  @include respond(medium) {
-    padding-bottom: 0;
-    padding-inline-start: 2rem;
   }
 }

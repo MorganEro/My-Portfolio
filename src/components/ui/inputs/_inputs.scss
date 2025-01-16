@@ -1,3 +1,20 @@
+@use '../../../scss/styles/abstracts/custom-bs-variables' as *;
+
 .color-picker {
-  height: inherit;
+  height: 2rem;
+  width: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #ccc;
+  border-radius: $border-radius;
+  padding: 0;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

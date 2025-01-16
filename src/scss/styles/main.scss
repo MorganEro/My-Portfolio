@@ -2,6 +2,7 @@
 @use './abstracts/mixins';
 @use './abstracts/custom-bs-variables' as vars;
 
+@use './base/accessibility';
 @use './base/animations';
 @use './base/base';
 @use './base/typography';

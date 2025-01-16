@@ -4,7 +4,7 @@ function SingleColor({ color, index }) {
   return (
     <div
       className={`${
-        index > 10 ? 'text-light-100' : ''
+        index > 10 ? 'text-light-100' : 'text-dark-700'
       } single-color col-3 col-md-3 col-lg-2 text-xs d-flex flex-column align-items-center justify-content-center p-1`}
       style={{ backgroundColor: `#${hex}` }}>
       <p className="percent">{weight}%</p>

@@ -1,24 +1,11 @@
-import { useEffect, useState } from 'react';
-import { IoMdColorPalette } from 'react-icons/io';
-import { LiaWindowCloseSolid } from 'react-icons/lia';
-import { RiArrowRightDoubleFill } from 'react-icons/ri';
+import { useEffect } from 'react';
 import { Link, scrollSpy } from 'react-scroll';
-import { useSection } from '../../../context/SectionContext';
-import { useColorPicker } from '../../../context/ColorPickerContext';
+import ColorPickerButton from '../../ui/buttons/ColorPickerButton';
+import CloseButton from '../../ui/CloseButton';
 import NavTogglerIcon from '../../ui/icons/NavTogglerIcon';
+import NavLinkList from '../../ui/NavLinkList';
 
 function Header() {
-  const { onContact, onIntro, handleSetActive } = useSection();
-  const { handlePalletLinkClick } = useColorPicker();
-  const [focusedLink, setFocusedLink] = useState(null);
-
-  const navLinks = [
-    { name: 'Introduction', to: 'Introduction' },
-    { name: 'Experience', to: 'Experience' },
-    { name: 'Projects', to: 'Projects' },
-    { name: 'Contact', to: 'Contact' },
-  ];
-
   useEffect(() => {
     scrollSpy.update();
   }, []);
@@ -30,25 +17,26 @@ function Header() {
           <Link
             to="Introduction"
             href="#Introduction"
-            className="navbar-brand d-flex align-items-center">
+            className="navbar-brand d-flex align-items-center"
+            aria-label='Go to "Introduction" section'>
             <img
               src="/logo.svg"
-              alt="logo"
+              alt="website logo"
+              className="navbar-logo"
               width="48"
               height="48"
             />
           </Link>
 
           <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            id="navbar-toggler"
-            className="navbar-toggler"
-            tabIndex="0"
-            type="button">
+            id="navbar-toggler">
             <NavTogglerIcon />
           </button>
 
@@ -58,58 +46,16 @@ function Header() {
             aria-labelledby="offcanvasNavbarLabel"
             data-bs-backdrop="static">
             <div className="offcanvas-header">
-              <button
-                type="button"
-                className="text-reset ms-auto me-btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close">
-                <LiaWindowCloseSolid
-                  className="close-icon me-text-primary"
-                  size={30}
-                />
-              </button>
+              <CloseButton
+                className="ms-auto"
+                target="offcanvas"
+              />
             </div>
-            <div className="offcanvas-body ms-md-auto">
-              <ul className="navbar-nav align-items-center">
-                <li
-                  className="nav-item color-picker order-sm-1 order-md-last"
-                  data-bs-dismiss="offcanvas"
-                  onClick={handlePalletLinkClick}>
-                  {' '}
-                  <IoMdColorPalette size={25} />
-                </li>
-                {navLinks.map((link, index) => (
-                  <li
-                    id="offcanvas-list"
-                    className="nav-item"
-                    onFocus={() => setFocusedLink(link.name)}
-                    onBlur={() => setFocusedLink(null)}
-                    key={index}>
-                    <Link
-                      activeClass="active"
-                      className={`nav-link ${
-                        onContact === 'true' ? 'light' : ''
-                      } ${onIntro === 'true' ? 'dark' : ''}`}
-                      onSetActive={handleSetActive}
-                      to={link.to}
-                      href={`#${link.to}`}
-                      spy={true}
-                      smooth={true}
-                      duration={500}
-                      activeStyle={{ fontWeight: '600' }}>
-                      <div className="d-flex align-items-center justify-content-center">
-                        {link.name}
-                        {focusedLink === link.name && (
-                          <RiArrowRightDoubleFill
-                            className="focus-arrow"
-                            size={30}
-                          />
-                        )}
-                      </div>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <div className="offcanvas-body ms-md-auto ">
+              <div className="navbar-items d-flex gap-2">
+                <NavLinkList />
+                <ColorPickerButton />
+              </div>
             </div>
           </div>
         </div>
