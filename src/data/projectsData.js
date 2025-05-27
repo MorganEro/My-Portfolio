@@ -1,6 +1,15 @@
 const projectsData = [
   {
     id: 1,
+    title: 'Mythguard',
+    techList: ['Wordpress', 'PHP'],
+    viewProjectLink: 'https://morgansprojects.com',
+    viewCodeLink: 'https://github.com/MorganEro/mythguard',
+    imageURL:
+      '/portfolio-images/mythguard-portfolio-image.webp?updatedAt=1748309030108',
+  },
+  {
+    id: 2,
     title: 'Entertainment Web App',
     techList: ['Vite/React', 'Styled components'],
     viewProjectLink: 'https://fm-entertainment-web-app.netlify.app/',
@@ -9,7 +18,7 @@ const projectsData = [
       '/portfolio-images/Screen%20Shot%202024-12-28%20at%2018.36.59.png?updatedAt=1735432672199',
   },
   {
-    id: 2,
+    id: 3,
     title: 'E-commerce Product Page',
     techList: ['React', 'Bootstrap'],
     viewProjectLink: 'https://morganero.github.io/ecommerce-product-page/',

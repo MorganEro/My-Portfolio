@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     loadColorSettings();
-  }, []);
+  }, [loadColorSettings]);
 
   return (
     <>

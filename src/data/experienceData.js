@@ -9,8 +9,11 @@ import {
   FaBootstrap,
   FaSass,
   FaNodeJs,
+  FaWordpress,
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
+import { SiPhp, SiTypescript } from 'react-icons/si';
+import { FaW } from 'react-icons/fa6';
 
 const experienceData = [
   {
@@ -67,6 +70,21 @@ const experienceData = [
     title: 'accessibility',
     years: calculateYears('10/2023'),
     icon: FaUniversalAccess,
+  },
+  {
+    title: 'typescript',
+    years: calculateYears('02/2025'),
+    icon: SiTypescript,
+  },
+  {
+    title: 'wordpress',
+    years: calculateYears('04/2025'),
+    icon: FaWordpress,
+  },
+  {
+    title: 'php',
+    years: calculateYears('04/2025'),
+    icon: SiPhp,
   },
 ];
 export default experienceData;
