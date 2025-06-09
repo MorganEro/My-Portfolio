@@ -1,19 +1,18 @@
-import calculateYears from '../utils/calcYears';
-import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 import {
-  FaGitAlt,
-  FaUniversalAccess,
-  FaReact,
-  FaCss3Alt,
-  FaHtml5,
   FaBootstrap,
-  FaSass,
+  FaCss3Alt,
+  FaGitAlt,
+  FaHtml5,
   FaNodeJs,
+  FaReact,
+  FaSass,
+  FaUniversalAccess,
   FaWordpress,
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
+import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 import { SiPhp, SiTypescript } from 'react-icons/si';
-import { FaW } from 'react-icons/fa6';
+import calculateYears from '../utils/calcYears';
 
 const experienceData = [
   {

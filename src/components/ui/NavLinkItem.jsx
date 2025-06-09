@@ -16,7 +16,7 @@ export function NavLinkItem({ link, index }) {
       <Link
         activeClass="active"
         className={`nav-link ${onContact === 'true' ? 'light' : ''} ${
-          onIntro === 'true' ? 'dark' : ''
+          onIntro === 'true' ? 'light' : ''
         }`}
         onSetActive={handleSetActive}
         to={link.to}

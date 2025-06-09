@@ -69,3 +69,25 @@
     transform: translateY(0);
   }
 }
+
+@keyframes fadeInAndRise {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-10%);
+    opacity: 0.8;
+  }
+  90% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}

@@ -10,7 +10,7 @@ function ColorPickerButton() {
     <button
       className={`nav-item me-btn-color-picker order-sm-1 order-md-last ${
         onContact === 'true' ? 'light' : ''
-      } ${onIntro === 'true' ? 'dark' : ''}`}
+      } ${onIntro === 'true' ? 'light' : ''}`}
       data-bs-dismiss="offcanvas"
       aria-label="Change color theme"
       onClick={handlePalletLinkClick}>

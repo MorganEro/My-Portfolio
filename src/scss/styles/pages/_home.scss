@@ -4,14 +4,7 @@
   height: 100vh;
   min-height: fit-content;
   position: relative;
-  background-image: linear-gradient(
-      to right bottom,
-      #{var(--color-light-100-rgba)},
-      #{var(--color-light-400-rgba)}
-    ),
-    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/woodCoreGrain.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-color: #{var(--color-dark-900)};
 }
 
 #Experience {

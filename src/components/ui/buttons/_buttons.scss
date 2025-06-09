@@ -4,7 +4,7 @@
 @use '../../../scss/styles/base/typography' as *;
 
 .me-btn-contact {
-  color: #{var(--color-dark-500)};
+  color: #{var(--color-dark-400)};
   border-bottom: 2px solid #{var(--color-dark-100)};
   outline: none;
   font-size: 1.6rem;

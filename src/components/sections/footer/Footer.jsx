@@ -3,7 +3,7 @@ import { useSection } from '../../../context/SectionContext';
 import { SiFrontendmentor } from 'react-icons/si';
 
 function Footer() {
-  const { onContact, onIntro } = useSection();
+  const { onContact } = useSection();
   const socialMediaIcons = [
     {
       name: 'Frontend Mentor',
