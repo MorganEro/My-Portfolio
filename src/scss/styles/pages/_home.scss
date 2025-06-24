@@ -1,10 +1,42 @@
 @use '../abstracts/variables';
+@use '../../../scss/styles/abstracts/mixins' as *;
 
 #Introduction {
   height: 100vh;
   min-height: fit-content;
   position: relative;
-  background-color: #{var(--color-dark-900)};
+  background-image: linear-gradient(
+      to bottom,
+      #{var(--color-dark-700-rgba)},
+      #{var(--color-dark-800-rgba)}
+    ),
+    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree6.png?updatedAt=1750788697123');
+
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 80px;
+
+  @include respond(medium) {
+    background-image: linear-gradient(
+        to bottom,
+        #{var(--color-dark-700-rgba)},
+        #{var(--color-dark-800-rgba)}
+      ),
+      url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree5.png?updatedAt=1750788697123');
+
+    background-position: 50% -10%;
+  }
+
+  @include respond(large) {
+    background-image: linear-gradient(
+        to bottom,
+        #{var(--color-dark-700-rgba)},
+        #{var(--color-dark-800-rgba)}
+      ),
+      url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree5.png?updatedAt=1750788697123');
+
+    background-position: 50% 25%;
+  }
 }
 
 #Experience {

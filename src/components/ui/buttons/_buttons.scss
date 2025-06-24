@@ -5,14 +5,15 @@
 
 .me-btn-contact {
   color: #{var(--color-dark-400)};
-  border-bottom: 2px solid #{var(--color-dark-100)};
+  border: 2px solid #{var(--color-dark-100)};
+  border-radius: custom.$border-radius;
   outline: none;
   font-size: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   transition: color 0.3s, transform 0.3s;
-  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
   font-weight: 700;
   cursor: pointer;
 
