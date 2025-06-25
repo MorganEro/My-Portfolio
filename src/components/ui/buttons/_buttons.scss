@@ -5,8 +5,7 @@
 
 .me-btn-contact {
   color: #{var(--color-dark-400)};
-  border: 2px solid #{var(--color-dark-100)};
-  border-radius: custom.$border-radius;
+  border-bottom: 2px solid #{var(--color-dark-100)};
   outline: none;
   font-size: 1.6rem;
   text-decoration: none;

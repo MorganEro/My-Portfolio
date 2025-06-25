@@ -13,8 +13,7 @@
     url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree7.png?updatedAt=1750847968144');
 
   background-size: cover;
-  background-position-x: center;
-  background-position-y: 80px;
+  background-position: 50% 80px;
 
   @include respond(medium) {
     background-image: linear-gradient(
@@ -35,7 +34,11 @@
       ),
       url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree5.png?updatedAt=1750788697123');
 
-    background-position: 50% 25%;
+    background-position: -35% 25%;
+  }
+
+  @include respond(xLarge) {
+    background-position: 20% 25%;
   }
 }
 

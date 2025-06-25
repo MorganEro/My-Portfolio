@@ -7,5 +7,9 @@
     @media (min-width: 64em) {
       @content;
     }
+  } @else if $breakpoint == xLarge {
+    @media (min-width: 75em) {
+      @content;
+    }
   }
 }
