@@ -3,36 +3,37 @@
 
 #Introduction {
   height: 100vh;
+  max-width: 100%;
   min-height: fit-content;
   position: relative;
-  background-image: linear-gradient(
-      to bottom,
-      #{var(--color-dark-700-rgba)},
-      #{var(--color-dark-800-rgba)}
+  background-image: radial-gradient(
+      circle at center,
+      #{var(--color-dark-700-rgba)} 0%,
+      #{var(--color-dark-800-rgba)} 100%
     ),
-    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree7.png?updatedAt=1750847968144');
+    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/backgroundImageSmall.png?updatedAt=1751581012180');
 
   background-size: cover;
   background-position: 50% 80px;
 
   @include respond(medium) {
-    background-image: linear-gradient(
-        to bottom,
-        #{var(--color-dark-700-rgba)},
-        #{var(--color-dark-800-rgba)}
+    background-image: radial-gradient(
+        circle at center,
+        #{var(--color-dark-700-rgba)} 0%,
+        #{var(--color-dark-800-rgba)} 100%
       ),
-      url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree5.png?updatedAt=1750788697123');
+      url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/backgroundImageLarge.png?updatedAt=1751581012180');
 
     background-position: 50% -10%;
   }
 
   @include respond(large) {
-    background-image: linear-gradient(
-        to bottom,
-        #{var(--color-dark-700-rgba)},
-        #{var(--color-dark-800-rgba)}
+    background-image: radial-gradient(
+        circle at center,
+        #{var(--color-dark-700-rgba)} 0%,
+        #{var(--color-dark-800-rgba)} 100%
       ),
-      url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/codetree5.png?updatedAt=1750788697123');
+      url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/backgroundImageLarge.png?updatedAt=1751581373343');
 
     background-position: -35% 25%;
   }
@@ -61,7 +62,7 @@
       #{var(--color-dark-800-rgba)},
       #{var(--color-dark-900-rgb)}
     ),
-    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/woodDots.jpg');
+    url('https://ik.imagekit.io/3wvmuwil3/portfolio-images/backgroundImageLarge.png?updatedAt=1751581373343');
   background-size: cover;
   background-position: top;
 }
