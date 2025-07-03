@@ -10,8 +10,11 @@ export const ColorPickerProvider = ({ children }) => {
   const { openModal, isModalOpen, closeModal } = useModal();
 
   const handleColorChange = color => {
+    const newColors = new Values(color).all(10);
     setPrimaryColor(color);
-    setColors(new Values(color).all(10));
+    setColors(newColors);
+    updateCssVariables(newColors);
+    saveColorSettings(newColors, color);
   };
 
   const rgbToRgba = (rgbArray, alpha) => {

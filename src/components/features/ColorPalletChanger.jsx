@@ -27,13 +27,6 @@ export const ColorPalletChanger = () => {
             aria-label="Choose color"
           />
         </div>
-
-        <BorderedButton
-          className="dark"
-          aria-label="Accept color change"
-          style={{ color: primaryColor, borderColor: primaryColor }}>
-          Accept
-        </BorderedButton>
       </form>
 
       <ColorList />

@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="header">
       <nav className="navbar navbar-expand-md fixed-top navbar-light me-blur px-1 px-sm-3 px-md-5 px-lg-5">
-        <div className="container-fluid">
+        <div className="container-fluid navbar-container">
           <Link
             to="Introduction"
             href="#Introduction"

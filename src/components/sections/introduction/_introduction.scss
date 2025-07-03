@@ -4,7 +4,8 @@
 @include respond(medium) {
   .section-introduction__container {
     padding-top: 15rem;
-    max-width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
 .section-introduction {

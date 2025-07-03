@@ -1,6 +1,11 @@
 @use '../../../scss/styles/abstracts/variables';
 @use '../../../scss/styles/abstracts/mixins' as *;
 
+.navbar-container {
+  max-width: 1330px;
+
+}
+
 #offcanvasNavbar {
   max-width: 50vw;
   background-color: #{var(--color-light-100)};
