@@ -1,5 +1,4 @@
 import { useColorPicker } from '../../context/ColorPickerContext';
-import { BorderedButton } from '../ui/buttons/BorderedButton';
 import { NoBorderButton } from '../ui/buttons/NoBorderButton';
 import ColorList from '../ui/ColorList';
 

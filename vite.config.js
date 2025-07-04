@@ -7,5 +7,13 @@ export default defineConfig({
   plugins: [react(), eslint()],
   css: {
     postcss: './postcss.config.js',
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        logger: {
+          warn: () => {}
+        }
+      }
+    }
   },
 });

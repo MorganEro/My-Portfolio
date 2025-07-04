@@ -1,5 +1,4 @@
 import { Link } from 'react-scroll';
-import ContactButton from '../../ui/buttons/ContactButton';
 
 function Introduction() {
   return (
@@ -26,7 +25,6 @@ function Introduction() {
           id="intro-title">
           Welcome to my Portfolio!
         </h1>
-
         <p
           className="section-introduction__description text-lg text-light-300"
           id="intro-description">
